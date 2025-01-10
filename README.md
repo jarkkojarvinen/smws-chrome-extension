@@ -34,6 +34,8 @@ This Chrome extension enhances the user experience on the [SMWS](https://www.smw
 ```
 smws-chrome-extension/
 │
+├── logo.png             # Logo
+├── LICENCE              # Licence
 ├── smws_codes.csv       # Distillery mapping file
 ├── content.js           # Main JavaScript file that adds distillery names
 ├── manifest.json        # Chrome extension configuration
