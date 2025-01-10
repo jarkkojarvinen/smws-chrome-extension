@@ -15,7 +15,7 @@ This Chrome extension enhances the user experience on the [SMWS](https://www.smw
    ```bash
    git clone https://github.com/jarkkojarvinen/smws-chrome-extension
    ```
-   Alternatively, download the `.zip` file and extract it.
+   Alternatively, download the `.zip` file (under green Code button above) and extract it.
 
 ### Step 2: Load the Extension into Chrome
 
