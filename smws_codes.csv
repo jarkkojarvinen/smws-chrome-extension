@@ -1,0 +1,236 @@
+SMWS Code;Distillery;Region/Country
+1;Glenfarclas;Speyside
+2;Glenlivet;Speyside
+3;Bowmore;Islay
+4;Highland Park;Islands (Highlands)
+5;Auchentoshan;Lowlands
+6;Macduff (Glen Deveron);Highlands
+7;Longmorn;Speyside
+8;Tamdhu;Speyside
+9;Glen Grant;Speyside
+10;Bunnahabhain;Islay
+11;Tomatin;Highlands
+12;Benriach;Speyside
+13;Dalmore;Highlands
+14;Talisker;Islands (Highlands)
+15;Glenfiddich;Speyside
+16;Glenturret;Highlands
+17;Scapa;Islands (Highlands)
+18;Inchgower;Speyside
+19;Glen Garioch;Highlands
+20;Inverleven;Lowlands
+21;Glenglassaugh;Highlands
+22;Glenkinchie;Lowlands
+23;Bruichladdich;Islay
+24;Macallan;Speyside
+25;Rosebank;Lowlands
+26;Clynelish;Highlands
+27;Springbank;Campbeltown
+28;Tullibardine;Highlands
+29;Laphroaig;Islay
+30;Glenrothes;Speyside
+31;Isle of Jura;Islands (Highlands)
+32;Edradour;Highlands
+33;Ardbeg;Islay
+34;Tamnavulin;Speyside
+35;Glen Moray;Speyside
+36;Benrinnes;Speyside
+37;Cragganmore;Speyside
+38;Caperdonich;Speyside
+39;Linkwood;Speyside
+40;Balvenie;Speyside
+41;Dailuaine;Speyside
+42;Tobermory (Ledaig);Islands (Highlands)
+43;Port Ellen;Islay
+44;Craigellachie;Speyside
+45;Dallas Dhu;Speyside
+46;Glenlossie;Speyside
+47;Benromach;Speyside
+48;Balmenach;Speyside
+49;St. Magdalene;Lowlands
+50;Bladnoch;Lowlands
+51;Bushmills;Norhtern Irland
+52;Old Pulteney;Highlands
+53;Caol Ila;Islay
+54;Aberlour;Speyside
+55;Royal Brackla;Highlands
+56;Coleburn;Speyside
+57;Glen Mhor;Highlands
+58;Strathisla;Speyside
+59;Teaninich;Highlands
+60;Aberfeldy;Highlands
+61;Brora;Highlands
+62;Glenlochy;Highlands
+63;Glentauchers;Speyside
+64;Mannochmore;Speyside
+65;Imperial;Speyside
+66;Ardmore;Highlands
+67;Banff;Speyside
+68;Blair Athol;Highlands
+69;Glen Albyn;Highlands
+70;Balblair;Highlands
+71;Glenburgie;Speyside
+72;Miltonduff;Speyside
+73;Aultmore;Speyside
+74;North Port;Highlands
+75;Glenury Royal;Highlands
+76;Mortlach;Speyside
+77;Glen Ord;Highlands
+78;Ben Nevis;Highlands
+79;Deanston;Highlands
+80;Glen Spey;Speyside
+81;Glen Keith;Speyside
+82;Glencadam;Highlands
+83;Convalmore;Speyside
+84;Glendullan;Speyside
+85;Glen Elgin;Speyside
+86;Glenesk;Highlands
+87;Millburn;Highlands
+88;Speyburn;Speyside
+89;Tomintoul;Speyside
+90;Pittyvaich;Speyside
+91;Dufftown;Speyside
+92;Lochside;Highlands
+93;Glen Scotia;Campbeltown
+94;Old Fettercairn;Highlands
+95;Auchroisk;Speyside
+96;Glendronach;Highlands
+97;Littlemill;Lowlands
+98;Inverleven;Lowlands
+99;Glenugie;Highlands
+100;Strathmill;Speyside
+101;Knockando;Speyside
+102;Dalwhinnie;Highlands
+103;Royal Lochnagar;Highlands
+104;Glencraig (Glenburgie);Speyside
+105;Tormore;Speyside
+106;Cardhu;Speyside
+107;Glenallachie;Speyside
+108;Allt-a-Bhainne;Speyside
+109;Mosstowie (Miltonduff);Speyside
+110;Oban;Highlands
+111;Lagavulin;Islay
+112;Loch Lomond (Inchmurrin);Highlands
+113;Braes of Glenlivet (Braeval);Speyside
+114;Longrow (Springbank);Campbeltown
+115;An Cnoc (Knockdhu);Highlands
+116;Yoichi;Japan
+117;Cooley (unpeated);Ireland
+118;Cooley/Connemara (peated);Ireland
+119;Yamazaki;Japan
+120;Hakushu;Japan
+121;Lochranza/Isle of Arran;Islands (Highlands)
+122;Croftengea (Loch Lomond);Highlands
+123;Glengoyne;Highlands
+124;Miyagikyo;Japan
+125;Glenmorangie;Highlands
+126;Hazelburn (Springbank);Campbeltown
+127;Port Charlotte (Bruichladdich);Islay
+128;Penderyn;Wales
+129;Kilchoman;Islay
+130;Chichibu;Japan
+131;Hanyu;Japan
+132;Karuizawa;Japan
+133;Westland (Washington, USA);133
+134;Paul John;India
+135;Loch Lomond (Inchmoan);Highlands
+136;Eden Mill;Lowlands
+137;St. George’s (The English Whisky Co.);England
+138;Nantou;Taiwan
+139;Kavalan;Taiwan
+140;Balcons;Texs, USA
+141;Fary Lochan;Denemark
+142;Breuckelen Distilling;New York, USA
+143;Copperworks Distilling Co.;Washington, USA
+144;High Coast (Box Whisky);Sweden
+145;Smögen Whisky;Sweden
+146;Cotswolds;England
+147;Archie Rose;Australia
+148;Starward;Australia
+149;Ardnamurchan;Highlands
+150;West Cork Distillers;Ireland
+151;Mackmyra;Sweden
+152;Shelter Point;Canada
+152;Shelter Point;Canada
+153;Thy Whisky;Denmark
+154;Mosgaard;Denmark
+155;Milk & Honey;Israel
+156;Glasgow;Lowlands
+157;Warenghem (Armorik);Franch
+158;Yuza;Japan
+159;Mars Shinshu;Japan
+160;Mars Tsunuki;Japan
+161;Nc’nean;Scotland (Highlands)
+162;N/A;
+163;Isle of Harris (The Hearach);Scotland (Highlands)
+G1;North British;Lowlands
+G2;Carsebridge;Lowlands
+G3;Caledonian;Lowlands
+G4;Cameronbridge;Lowlands
+G5;Invergordon;Highlands
+G6;Port Dundas;Lowlands
+G7;Girvan;Lowlands
+G8;Cambus;Lowlands
+G9;Loch Lomond;Highlands
+G10;Strathclyde;Lowlands
+G11;Nikka Coffey Grain;Japan
+G12;Nikka Coffey Malt;Japan
+G13;Chita;Japan
+G14;Dumbarton;Lowlands
+G15;Loch Lomond (Rhosdhu);Highlands
+G16;Glasgow;Lowlands
+B1;Heaven Hill;Kentucky, USA
+B2;Bernheim;Kentucky, USA
+B3;Rock Town;Arkansas, USA
+B4;FEW Spirits;Illinois, USA
+B5;George Dickel (Cascade Hollow);Tennessee, USA
+B6;Finger Lakes Distilling;New York, USA
+B7;MGP (Midwest Grain Products);Indiana, USA
+B8;Woodinville Whiskey Co.;Washington, USA
+R1;Monymusk;Jamaica
+R2;Demerara Distillers (El Dorado);Guyana
+R3;West Indies Rum;Barbados
+R4;Trinidad Distillers (Angostura);Trinidad
+R5;Long Pond;Jamaica
+R6;Foursquare;Barbados
+R7;Hampden;Jamaica
+R8;Compañía Licorera de Nicaragua (Flor de Caña);Nicaragua
+R9;Varela Hermanos (Ron Abuelo);Panama
+R10;Trinidad Distiller’s;Trinidad
+R11;Worthy Park;Jamaica
+R12;Travellers;Belize
+R13;Caroni;Trinidad
+R14;Uitvlugt;Guyana
+A1;Chateau de Lacaze;France
+A2;Domaine Laguille;France
+A3;West Indies Rum;Barbados
+A4;Trinidad Distillers (Angostura);Trinidad
+A5;Chateau de Laubade;France
+A6;Domaine Lasalle;France
+A7;Domain le Parre;France
+A8;Domaine Cavaillon;France
+C1;Camus;France
+C2;Domaine de Chez Guérive;France
+C3;Louis Royer;France
+C4;Distillery D’Aumagne;France
+C5;Tiffon Cognac;France
+C6;M&H Bonneau;France
+C7;Guy Rateau (Cognac Petite Champagne Controlée);France
+C8;Marie C. Bodit (Cognac Grande Champagne Controlée);France
+C9;Robert Audebeau (Cognac Petite Champagne Controlée);France
+GN1;Glasgow Distillery Company;Scotland
+GN2;Strathearn Distillers;Scotland
+GN3;The Borders Distillery;Scotland
+GN4;Boatyard Distillery;Northern Ireland
+GN5;Glenrinnes;Scotland
+GN6;Holyrood;Northern Ireland
+GN7;Cotswolds;England
+RW1;FEW Spirits;Illinois, USA
+RW2;Finger Lakes Distilling;New York, USA
+RW3;New York Distilling Co.;New York, USA
+RW4;Peerless Distillery;Kentucky, USA
+RW5;MGP (Midwest Grain Products);Indiana, USA
+RW6;Kyrö Distillery;Finland
+RW7;Journeyman Distillery;Michigan, USA
+CW1;Heaven Hill;Kentucky, USA
+CW2;Balcones;Texas, USA
