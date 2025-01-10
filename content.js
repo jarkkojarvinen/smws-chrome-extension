@@ -127,7 +127,7 @@ function observePageChanges(mapping) {
 function addGitHubLink() {
     const linkElement = document.createElement("div");
     linkElement.innerHTML = `
-        <a href="https://github.com/your-repo-name" target="_blank" style="text-decoration: none; color: white;">
+        <a href="https://github.com/jarkkojarvinen/smws-chrome-extension" target="_blank" style="text-decoration: none; color: white;">
             Distillery names added by SMWS Chrome Extension
         </a>
     `;

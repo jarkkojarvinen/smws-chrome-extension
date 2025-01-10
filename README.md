@@ -13,7 +13,7 @@ This Chrome extension enhances the user experience on the [SMWS](https://www.smw
 
 1. Clone or download this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/smws-chrome-extension.git
+   git clone https://github.com/jarkkojarvinen/smws-chrome-extension
    ```
    Alternatively, download the `.zip` file and extract it.
 
@@ -38,6 +38,17 @@ smws-chrome-extension/
 ├── content.js           # Main JavaScript file that adds distillery names
 ├── manifest.json        # Chrome extension configuration
 └── README.md            # Documentation
+```
+
+## SMWS Codes
+
+This project uses Scotch Malt Whisky Society (SMWS) codes from the webpage [https://whiskygospel.com/smws-codes/](https://whiskygospel.com/smws-codes/). The web page content has been consolidated into a semicolon separated CSV file for example:
+
+```csv
+SMWS Code;Distillery;Region/Country
+1;Glenfarclas;Speyside
+2;Glenlivet;Speyside
+...
 ```
 
 ## Updating the Extension
