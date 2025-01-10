@@ -77,27 +77,6 @@ function addDistilleryToRelatedProducts(mapping) {
     });
 }
 
-function addDistilleryToRelatedProducts(mapping) {
-    // Check if related products block exists
-    const relatedProductsBlock = document.querySelector(".relatedProductsBlock");
-    if (!relatedProductsBlock) return;
-
-    // Find all items in the related products list
-    const items = relatedProductsBlock.querySelectorAll(".relatedProductsList .card-body");
-    items.forEach(item => {
-        // Get the CASK NO. element
-        const caskNoElement = item.querySelector(".caskNo");
-        if (caskNoElement) {
-            const caskCode = caskNoElement.textContent.trim().split(" ").pop().split(".")[0];
-            const distillery = mapping[caskCode];
-            if (distillery && !caskNoElement.textContent.includes(`(${distillery})`)) {
-                // Append distillery name directly to the caskNo element
-                caskNoElement.textContent += ` (${distillery})`;
-            }
-        }
-    });
-}
-
 function observeRelatedProductsChanges(mapping) {
     const targetNode = document.body;
     const config = { childList: true, subtree: true };
