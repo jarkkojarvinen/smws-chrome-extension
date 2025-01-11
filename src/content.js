@@ -1,5 +1,5 @@
 async function loadDistilleryData() {
-    const response = await fetch(chrome.runtime.getURL("smws_codes.csv"));
+    const response = await fetch(chrome.runtime.getURL("assets/data/smws_codes.csv"));
     const text = await response.text();
     return text
         .split("\n")

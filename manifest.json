@@ -3,9 +3,10 @@
   "name": "SMWS Chrome Extension",
   "version": "0.1",
   "icons": {
-    "128": "./logo.png"
+    "128": "assets/icons/logo.png"
   },
   "description": "Add distillery names next to SMWS cask numbers.",
+  "homepage_url": "https://github.com/jarkkojarvinen/smws-chrome-extension",
   "permissions": [
     "activeTab"
   ],
@@ -18,14 +19,14 @@
         "https://smws.eu/*"
       ],
       "js": [
-        "content.js"
+        "src/content.js"
       ]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": [
-        "smws_codes.csv"
+        "assets/data/smws_codes.csv"
       ],
       "matches": [
         "https://smws.eu/*"
