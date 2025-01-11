@@ -35,15 +35,15 @@ This Chrome extension enhances the user experience on the [SMWS](https://www.smw
 smws-chrome-extension/
 │
 ├── assets
-│   └── icons
-│      └── logo.png        # Logo
 │   └── data
 │      └── smws_codes.csv  # Distillery mapping file
+│   └── icons
+│      └── logo.png        # Logo
 ├── src
 │   └── content.js         # Main JavaScript file that adds distillery names
 ├── LICENCE                # Licence
-├── manifest.json          # Chrome extension configuration
-└── README.md              # Documentation
+├── README.md              # Documentation
+└── manifest.json          # Chrome extension configuration
 ```
 
 ## SMWS Codes
