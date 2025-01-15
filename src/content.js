@@ -20,38 +20,60 @@ function appendDistilleryToElement(element, distillery) {
     }
 }
 
-function getCaskCodeFromItem(item) {
-    const caskNameElement = item.querySelector("span.name");
-    const caskCodeElement = caskNameElement?.nextElementSibling;
-    if (
-        caskNameElement?.textContent.trim() === "CASK NO." &&
-        caskCodeElement?.classList.contains("value")
-    ) {
-        return caskCodeElement.textContent.trim().split(".")[0];
-    }
-    return null;
-}
-
 function addDistilleryToProductPage(mapping) {
     const productElement = document.querySelector(".productView-product .caskNo");
     if (productElement) {
-        const caskCode = productElement.textContent.split(" ").pop().trim().split(".")[0];
+        const caskCode = productElement.textContent
+            .replace("CASK NO.", "")
+            .trim()
+            .split(".")[0];
         const distillery = mapping[caskCode];
-        const titleElement = document.querySelector(".productView-title");
-        appendDistilleryToElement(titleElement, distillery);
+
+        if (distillery && !productElement.textContent.includes(`(${distillery})`)) {
+            productElement.textContent += ` (${distillery})`;
+        }
     }
 }
 
 function addDistilleryToListPage(mapping) {
     const items = document.querySelectorAll(".itemInfoWrap");
+
     items.forEach(item => {
-        const caskCode = getCaskCodeFromItem(item);
-        if (caskCode) {
+        const ulElement = item.querySelector("ul");
+        const caskNameElement = ulElement?.querySelector("li.small > span.name");
+        const caskCodeElement = caskNameElement?.nextElementSibling;
+
+        if (
+            caskNameElement?.textContent.trim() === "CASK NO." &&
+            caskCodeElement?.classList.contains("value")
+        ) {
+            const caskCode = caskCodeElement.textContent.trim().split(".")[0];
             const distillery = mapping[caskCode];
-            const titleElement = item
-                .closest(".card-body")
-                .querySelector(".card-title a");
-            appendDistilleryToElement(titleElement, distillery);
+
+            if (distillery) {
+                // Check if distillery already exists
+                const existingDistilleryElement = Array.from(
+                    ulElement.querySelectorAll("li > span.name")
+                ).find(span => span.textContent.trim() === "Distillery");
+
+                if (!existingDistilleryElement) {
+                    // Create new distillery list item
+                    const distilleryItem = document.createElement("li");
+                    const nameSpan = document.createElement("span");
+                    nameSpan.classList.add("name");
+                    nameSpan.textContent = "Distillery";
+
+                    const valueSpan = document.createElement("span");
+                    valueSpan.classList.add("value");
+                    valueSpan.textContent = distillery;
+
+                    distilleryItem.appendChild(nameSpan);
+                    distilleryItem.appendChild(valueSpan);
+
+                    // Insert as the first <li> in the <ul>
+                    ulElement.prepend(distilleryItem);
+                }
+            }
         }
     });
 }
