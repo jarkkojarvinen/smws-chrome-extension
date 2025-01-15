@@ -15,7 +15,7 @@ This Chrome extension enhances the user experience on the [SMWS](https://www.smw
    ```bash
    git clone https://github.com/jarkkojarvinen/smws-chrome-extension
    ```
-   Alternatively, download the `.zip` file (under green Code button above) and extract it.
+   Alternatively, download the .zip file (available under the green Code button above or in the Releases section on the right) and extract it.
 
 ### Step 2: Load the Extension into Chrome
 
@@ -48,7 +48,7 @@ smws-chrome-extension/
 
 ## SMWS Codes
 
-This project uses Scotch Malt Whisky Society (SMWS) codes from the webpage [https://whiskygospel.com/smws-codes/](https://whiskygospel.com/smws-codes/). The web page content has been consolidated into a semicolon separated CSV file for example:
+This project uses Scotch Malt Whisky Society (SMWS) codes from the webpage [https://whiskygospel.com/smws-codes/](https://whiskygospel.com/smws-codes/). The web page content has been consolidated with [smws-codes-csv-generator](https://github.com/jarkkojarvinen/smws-codes-csv-generator) into a semicolon separated CSV file for example:
 
 ```csv
 SMWS Code;Distillery;Region/Country
