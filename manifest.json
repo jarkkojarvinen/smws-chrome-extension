@@ -11,12 +11,14 @@
     "activeTab"
   ],
   "host_permissions": [
-    "https://smws.eu/*"
+    "https://smws.eu/*",
+    "https://smws.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://smws.eu/*"
+        "https://smws.eu/*",
+        "https://smws.com/*"
       ],
       "js": [
         "src/content.js"
@@ -29,7 +31,8 @@
         "assets/data/smws_codes.csv"
       ],
       "matches": [
-        "https://smws.eu/*"
+        "https://smws.eu/*",
+        "https://smws.com/*"
       ]
     }
   ]
