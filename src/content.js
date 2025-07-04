@@ -99,6 +99,25 @@ function addDistilleryToRelatedProducts(mapping) {
     });
 }
 
+function addDistilleryToProductDescription(mapping) {
+    const descriptionBlock = document.querySelector("#productView-description");
+    if (!descriptionBlock) return;
+
+    const strongTags = descriptionBlock.querySelectorAll("strong");
+    strongTags.forEach(strong => {
+        const text = strong.textContent.trim();
+        const match = text.match(/^(\d+)\.\d+/); // Match cask codes like 13.110
+        if (match) {
+            const codePrefix = match[1];
+            const distillery = mapping[codePrefix];
+
+            if (distillery && !text.includes(distillery)) {
+                strong.textContent += ` (${distillery})`;
+            }
+        }
+    });
+}
+
 function observeRelatedProductsChanges(mapping) {
     const targetNode = document.body;
     const config = { childList: true, subtree: true };
@@ -157,6 +176,7 @@ addGitHubLink();
         addDistilleryToListPage(mapping);
     }
     addDistilleryToRelatedProducts(mapping);
+    addDistilleryToProductDescription(mapping);
 
     // Observe for dynamic changes
     observePageChanges(mapping);
