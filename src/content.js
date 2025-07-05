@@ -118,6 +118,41 @@ function addDistilleryToProductDescription(mapping) {
     });
 }
 
+function addDistilleryToCartPage(mapping) {
+    const caskElements = document.querySelectorAll(".cart-item-cask");
+
+    caskElements.forEach(caskElement => {
+        const text = caskElement.textContent.trim();
+        const match = text.match(/CASK NO\. (\d+)\.(\d+)/i);
+        if (match) {
+            const caskCode = match[1]; // e.g. "1"
+            const distillery = mapping[caskCode];
+            if (distillery && !caskElement.textContent.includes(`(${distillery})`)) {
+                caskElement.textContent += ` (${distillery})`;
+            }
+        }
+    });
+}
+
+function addDistilleryToCartPreview(mapping) {
+    const caskElements = document.querySelectorAll(".previewCartItem .caskNo");
+
+    caskElements.forEach(caskElement => {
+        const text = caskElement.textContent.trim();
+        const match = text.match(/CASK NO\. (\d+)\.(\d+)/i);
+        if (match) {
+            const caskCode = match[1];
+            const distillery = mapping[caskCode];
+            if (distillery && !caskElement.textContent.includes(`(${distillery})`)) {
+                caskElement.textContent += ` (${distillery})`;
+            }
+        }
+    });
+}
+
+
+// OBSERVE
+
 function observeRelatedProductsChanges(mapping) {
     const targetNode = document.body;
     const config = { childList: true, subtree: true };
@@ -144,6 +179,23 @@ function observePageChanges(mapping) {
     observer.observe(document.body, { childList: true, subtree: true });
 }
 
+function observeCartPreview(mapping) {
+    const target = document.body;
+    const config = { childList: true, subtree: true };
+
+    const observer = new MutationObserver(() => {
+        const cartItems = document.querySelectorAll(".previewCartItem .caskNo");
+        if (cartItems.length > 0) {
+            addDistilleryToCartPreview(mapping);
+        }
+    });
+
+    observer.observe(target, config);
+}
+
+
+// MISC
+
 function addGitHubLink() {
     const linkElement = document.createElement("div");
     linkElement.innerHTML = `
@@ -166,6 +218,7 @@ function addGitHubLink() {
 }
 addGitHubLink();
 
+// MAIN
 (async () => {
     const mapping = await loadDistilleryData();
 
@@ -174,6 +227,8 @@ addGitHubLink();
         addDistilleryToProductPage(mapping);
     } else if (document.querySelector(".itemInfoWrap")) {
         addDistilleryToListPage(mapping);
+    } else if (document.querySelector(".cart-item-cask")) {
+        addDistilleryToCartPage(mapping);
     }
     addDistilleryToRelatedProducts(mapping);
     addDistilleryToProductDescription(mapping);
@@ -181,6 +236,7 @@ addGitHubLink();
     // Observe for dynamic changes
     observePageChanges(mapping);
     observeRelatedProductsChanges(mapping);
+    observeCartPreview(mapping);
 })();
 
 
